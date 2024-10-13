@@ -51,6 +51,7 @@ import PlaceOrder from './pages/PlaceOrder';
 import Home from './pages/Home';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 
 const App = () => {
   return (
@@ -61,6 +62,8 @@ const App = () => {
 
       <Navigation />
     </div>
+    
+      <SearchBar />
      
 
       {/* Content with margin-top to account for fixed navbar */}
@@ -71,7 +74,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product/:productId" element={<Product />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/placeOrder" element={<PlaceOrder />} />
         </Routes>

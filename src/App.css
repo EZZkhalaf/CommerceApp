@@ -44,3 +44,19 @@
 a.active hr{
   display: block;
 }
+
+/* Add this to your CSS file or a <style> tag */
+@keyframes slide-down {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slide-down 0.3s ease forwards;
+}
